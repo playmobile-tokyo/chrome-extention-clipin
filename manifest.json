@@ -1,0 +1,20 @@
+{
+  "browser_action": {
+    "default_title": "Clipin",
+    "default_icon": "icons/icon.png",
+    "default_popup": "historyModal.html"
+  },
+  "description": "ClipBoard history & edit",
+  "icons": {
+    "128": "icons/icon128.png",
+    "48": "icons/icon48.png"
+  },
+  "manifest_version": 2,
+  "name": "Clipin",
+  "version": "1.0",
+  "permissions": ["contextMenus","clipboardRead","clipboardWrite"],
+  "options_page": "options.html",
+  "background" : {
+    "page": "contextMenu.html"
+  }
+}
