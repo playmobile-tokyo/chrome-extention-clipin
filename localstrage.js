@@ -4,6 +4,8 @@ export const saveLocalStorage = function(text) {
 	try{
 		copyHistory = JSON.parse(localStorage.getItem('copy'));
 	}catch(e){
+	}
+	if (!Array.isArray(copyHistory)) {
 		copyHistory = [];
 	}
 	// 保存しないパターン
